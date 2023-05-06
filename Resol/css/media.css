@@ -1,0 +1,170 @@
+@media (max-width: 1249px){
+    .blog__items{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1130px){
+    .food__wrapper{
+        flex-direction: column;
+    }
+
+    .food__info{
+        text-align: center;
+    }
+
+    .food__btns{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1080px){
+    .menu__items{
+        grid-template-columns: repeat(2, 1fr);
+        /* place-items: center; */
+        justify-items: center;
+    }
+}
+
+@media (max-width: 1040px){
+    .eat__wrapper{
+        flex-direction: column-reverse;
+    }
+
+    .eat__info{
+        text-align: center;
+    }
+
+    .eat__btns{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 960px){
+    .ease__wrapper{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 920px){
+    /* BURGER MENU */
+
+    .menu-btn{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        order: 1;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        z-index: 50;
+    }
+
+    .logo{
+        position: relative;
+        z-index: 50;
+    }
+
+    .btn-line{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        height: 2px;
+        transition: .3s ease-in;
+    }
+
+    .btn-line:nth-child(1){
+        top: 0;
+    }
+    .btn-line:nth-child(2){
+        top: 20px;
+    }
+    .btn-line:nth-child(3){
+        top: 20px;
+    }
+    .btn-line:nth-child(4){
+        top: 40px;
+    }
+    
+    .menu-open .btn-line:nth-child(1){
+        transform: scaleX(0);
+    }
+    .menu-open .btn-line:nth-child(2){
+        transform: rotate(45deg);
+    }
+    .menu-open .btn-line:nth-child(3){
+        transform: rotate(-45deg);
+    }
+    .menu-open .btn-line:nth-child(4){
+        transform: scaleX(0);
+    }
+
+    .nav__items{
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background-color: #0a0a0a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateY(-100%); /*убирается с страницы*/
+        transition: .3s ease-in;
+    }
+
+    .menu-open .nav__items{
+        transform: translateY(0%); /*при клике добавляется бургер меню*/
+    }
+}
+
+@media (max-width: 900px){
+    .chef__items{
+        grid-template-columns: repeat(2, 1fr);  
+    }
+}
+
+@media (max-width: 880px){
+    .our__wrapper{
+        flex-direction: column;
+    }
+
+    .our__header-content{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 800px){
+    .order__content-items{
+        gap: 20px;
+    }
+}
+
+@media (max-width: 730px){
+    .menu__items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .eat{
+        padding-bottom: 80px;
+    }
+
+    .chef{
+        padding: 80px 0;
+    }
+
+    .chef__items{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+}
+
+@media (max-width: 610px){
+    .order__item{
+        padding: 30px 40px;
+    }
+}
